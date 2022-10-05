@@ -8,7 +8,15 @@ buttonAdd.addEventListener("click", () => {
     
     
     if (selectExame.selectedIndex === 0 || formFile.value === "") {
-        return window.alert("Selecione um tipo de arquivo.")
+        const containerAlert = document.querySelector(".container-alert")
+
+        containerAlert.innerHTML = `
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Selecione</strong> um tipo de arquivo.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        `
+        return
     }
 
 

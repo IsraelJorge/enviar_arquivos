@@ -38,6 +38,7 @@ body{
 
 .container-input{
     display: flex;
+    margin-bottom: 20px;
 }
 
 #formFile{
